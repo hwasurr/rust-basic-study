@@ -1,11 +1,9 @@
 use std::mem;
 
 pub fn run() {
-    // Vectors
-    // Resizable Arrays
+    // Vectors Resizable Arrays
 
     let numbers: Vec<i32> = vec![1, 2, 3, 4, 5];
-    // 자릿수가 적거나 많아도 안된다.
     // 타입이 통일되어야 한다.
 
     println!("{:?}", numbers);
@@ -13,7 +11,7 @@ pub fn run() {
     // Get single val
     println!("single val[0]: {}", numbers[0]);
 
-    // Mutable Vector - 자릿수, 타입에 맞추어서 변경만 가능
+    // Mutable Vector - 타입에 맞추어서 변경만 가능
     let mut mutable_numbers: Vec<i32> = vec![6, 7, 8, 9, 0];
     mutable_numbers[2] = 20;
     println!("Mutated Vector {:?}", mutable_numbers);
